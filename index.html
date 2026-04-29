@@ -530,7 +530,28 @@
                     <p class="cta-section__text">Tell us your criteria. We'll build a verified list from state bar records and 50+ sources.</p>
                 </div>
                 
-                <a href="/contact/" class="btn btn--white btn--lg">Get Firm Data</a>
+                <form class="form" action="https://formspree.io/f/mzdynypv" method="POST">
+                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label class="form__label" for="cta-name">Name</label>
+                            <input class="form__input" type="text" id="cta-name" name="name" required>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="cta-email">Email</label>
+                            <input class="form__input" type="email" id="cta-email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="cta-company">Company</label>
+                        <input class="form__input" type="text" id="cta-company" name="company">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="cta-message">What data do you need?</label>
+                        <textarea class="form__textarea" id="cta-message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--white btn--lg form__submit">Get Firm Data</button>
+                </form>
                 <p class="cta-section__proof">Bar verified. 3-5 day delivery. No annual contracts.</p>
             </div>
         </section>
