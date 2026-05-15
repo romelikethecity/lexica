@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B2A4A">
+    <title>AmLaw 100 vs AmLaw 200 Data: What's In It</title>
+    <meta name="description" content="What's in AmLaw 100 and 200 data, how revenue and PPP tiering works, and what's missing for mid-market firms. A buyer's view.">
+    <link rel="canonical" href="https://getLexica.com/resources/amlaw-100-vs-200-data/">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://getLexica.com/resources/amlaw-100-vs-200-data/">
+    <meta property="og:title" content="AmLaw 100 vs AmLaw 200 Data: What's In It">
+    <meta property="og:description" content="What's in AmLaw 100 and 200 data, how revenue and PPP tiering works, and what's missing for mid-market firms. A buyer's view.">
+    <meta property="og:site_name" content="Lexica">
+    <meta property="og:image" content="https://getLexica.com/assets/images/og-default.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AmLaw 100 vs AmLaw 200 Data: What's In It">
+    <meta name="twitter:description" content="What's in AmLaw 100 and 200 data, how revenue and PPP tiering works, and what's missing for mid-market firms. A buyer's view.">
+    <meta name="twitter:image" content="https://getLexica.com/assets/images/og-default.png">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://getLexica.com"},
+    {"@type": "ListItem", "position": 2, "name": "Resources", "item": "https://getLexica.com/resources/"},
+    {"@type": "ListItem", "position": 3, "name": "AmLaw 100 vs AmLaw 200 Data: What's In It and What's Missing", "item": "https://getLexica.com/resources/amlaw-100-vs-200-data/"}
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "AmLaw 100 vs AmLaw 200 Data: What's In It and What's Missing", "description": "What's in AmLaw 100 and 200 data, how revenue and PPP tiering works, and what's missing for mid-market firms. A buyer's view.", "author": {"@type": "Organization", "name": "Lexica"}, "publisher": {"@type": "Organization", "name": "Lexica", "url": "https://getLexica.com"}, "datePublished": "2026-05-14", "dateModified": "2026-05-14", "mainEntityOfPage": "https://getLexica.com/resources/amlaw-100-vs-200-data/", "image": "https://getLexica.com/assets/images/og-default.png"}
+    </script>
+    <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the difference between AmLaw 100 and AmLaw 200?", "acceptedAnswer": {"@type": "Answer", "text": "The AmLaw 100 ranks the top 100 U.S. firms by gross revenue. The AmLaw 200 extends the ranking to 200 firms. Both are published annually by ALM. The 100 is more financially homogeneous; the 200 includes a long tail of smaller firms with very different economics."}}, {"@type": "Question", "name": "What's the AmLaw 100 cut-off?", "acceptedAnswer": {"@type": "Answer", "text": "In the most recent release, the AmLaw 100 starts at roughly $700M in gross revenue. The cut-off shifts each year as firms grow. The AmLaw 200 cut-off is around $230M."}}, {"@type": "Question", "name": "What is PPP and why does it matter?", "acceptedAnswer": {"@type": "Answer", "text": "PPP is profits per equity partner, the average distribution to a firm's equity partners after expenses. It signals how much discretionary spending power the partnership has. High-PPP firms ($3M+) buy premium legal tech and outside services more readily than lower-PPP firms."}}, {"@type": "Question", "name": "Does AmLaw data include attorney contact information?", "acceptedAnswer": {"@type": "Answer", "text": "No. AmLaw data is firm-level: revenue, partner count, head count, and practice descriptions. You need a separate contact source to reach individual partners or associates."}}, {"@type": "Question", "name": "What about firms ranked 200 to 600?", "acceptedAnswer": {"@type": "Answer", "text": "These are mid-market firms. They are not covered by ALM and are poorly covered by horizontal platforms like ZoomInfo. The best source is state bar data filtered by firm size, cross-referenced with firm websites. Lexica builds this segment for clients on demand."}}, {"@type": "Question", "name": "How often is AmLaw data updated?", "acceptedAnswer": {"@type": "Answer", "text": "Once per year, in the spring. The AmLaw 100 is published first, followed by the AmLaw 200 a few weeks later. Lateral hires, practice launches, and office openings are tracked separately through Law.com and Above the Law."}}]}
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/favicons/favicon-16.svg">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/css/styles.css?v=1" as="style">
+
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="/assets/fonts/plus-jakarta-sans.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css?v=1">
+
+    <!-- Google Analytics 4 with Consent Mode v2 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+      var _vc = localStorage.getItem('lexica-consent');
+      if (_vc === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+      }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-22TFKR7Z7J"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-22TFKR7Z7J');
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="sr-only sr-only--focusable">Skip to main content</a>
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="header__logo">
+                <img src="/assets/favicons/favicon.svg" alt="" class="header__logo-icon" width="32" height="32" fetchpriority="high">
+                <span class="header__logo-text">Lexica</span>
+            </a>
+
+            <nav class="nav--desktop" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Practice Areas <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/practice-areas/" class="nav__dropdown-item">All Practice Areas</a>
+<a href="/practice-areas/corporate-ma/" class="nav__dropdown-item">Corporate / M&A</a>
+<a href="/practice-areas/litigation/" class="nav__dropdown-item">Litigation</a>
+<a href="/practice-areas/intellectual-property/" class="nav__dropdown-item">Intellectual Property</a>
+<a href="/practice-areas/real-estate/" class="nav__dropdown-item">Real Estate</a>
+<a href="/practice-areas/employment-labor/" class="nav__dropdown-item">Employment / Labor</a>
+<a href="/practice-areas/personal-injury/" class="nav__dropdown-item">Personal Injury</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/attorney-contact-data/" class="nav__dropdown-item">Attorney Contact Data</a>
+<a href="/services/bar-verification/" class="nav__dropdown-item">Bar Verification</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom List Building</a>
+<a href="/services/firm-segmentation/" class="nav__dropdown-item">Firm Segmentation</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+<a href="/firm-size/" class="nav__dropdown-item">By Firm Size</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="/contact/" class="btn btn--primary btn--sm">Get Firm Data</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="menu-toggle__icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav--mobile" role="navigation" aria-label="Mobile navigation">
+        <ul class="nav__list">
+            <li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Practice Areas <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/practice-areas/" class="nav__dropdown-item">All Practice Areas</a>
+<a href="/practice-areas/corporate-ma/" class="nav__dropdown-item">Corporate / M&A</a>
+<a href="/practice-areas/litigation/" class="nav__dropdown-item">Litigation</a>
+<a href="/practice-areas/intellectual-property/" class="nav__dropdown-item">Intellectual Property</a>
+<a href="/practice-areas/real-estate/" class="nav__dropdown-item">Real Estate</a>
+<a href="/practice-areas/employment-labor/" class="nav__dropdown-item">Employment / Labor</a>
+<a href="/practice-areas/personal-injury/" class="nav__dropdown-item">Personal Injury</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/services/attorney-contact-data/" class="nav__dropdown-item">Attorney Contact Data</a>
+<a href="/services/bar-verification/" class="nav__dropdown-item">Bar Verification</a>
+<a href="/services/custom-list-building/" class="nav__dropdown-item">Custom List Building</a>
+<a href="/services/firm-segmentation/" class="nav__dropdown-item">Firm Segmentation</a>
+
+                    </div>
+                </li><li class="nav__item--dropdown">
+                    <button class="nav__dropdown-toggle" aria-expanded="false">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg></button>
+                    <div class="nav__dropdown">
+                        <a href="/resources/" class="nav__dropdown-item">Guides & Articles</a>
+<a href="/compare/" class="nav__dropdown-item">Comparisons</a>
+<a href="/alternatives/" class="nav__dropdown-item">Alternatives</a>
+<a href="/for/" class="nav__dropdown-item">By Industry</a>
+<a href="/firm-size/" class="nav__dropdown-item">By Firm Size</a>
+
+                    </div>
+                </li><li><a href="/pricing/" class="nav__link">Pricing</a></li><li><a href="/about/" class="nav__link">About</a></li>
+        </ul>
+        <a href="/contact/" class="btn btn--primary">Get Firm Data</a>
+    </nav>
+
+    <script>
+    (function(){
+        var toggle=document.querySelector('.menu-toggle');
+        var mobileNav=document.querySelector('.nav--mobile');
+        if(!toggle||!mobileNav)return;
+        toggle.addEventListener('click',function(){
+            var open=mobileNav.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded',open);
+            document.body.style.overflow=open?'hidden':'';
+        });
+        var dropdowns=document.querySelectorAll('.nav__item--dropdown .nav__dropdown-toggle');
+        dropdowns.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                var parent=btn.closest('.nav__item--dropdown');
+                var wasActive=parent.classList.contains('active');
+                if(mobileNav.contains(parent)){
+                    mobileNav.querySelectorAll('.nav__item--dropdown.active').forEach(function(d){d.classList.remove('active');d.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded','false');});
+                }
+                if(!wasActive){
+                    parent.classList.add('active');
+                    btn.setAttribute('aria-expanded','true');
+                }else{
+                    parent.classList.remove('active');
+                    btn.setAttribute('aria-expanded','false');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <main id="main-content">
+
+
+        <section class="content-page">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="https://getLexica.com">Home</a> <span class="breadcrumb__separator">/</span> <a href="https://getLexica.com/resources/">Resources</a> <span class="breadcrumb__separator">/</span> <span class="breadcrumb__current">AmLaw 100 vs AmLaw 200 Data: What's In It and What's Missing</span>
+        </nav>
+                <div class="content-page__header">
+                    <h1 class="content-page__title">AmLaw 100 vs AmLaw 200 Data: What's In It and What's Missing</h1>
+                </div>
+                <div class="content-body">
+                    <p>The AmLaw 100 and AmLaw 200 are the two most-cited firm rankings in the U.S. legal market. They get treated as if they were the same dataset with different cut-offs. They are not. The economics, the data fields, and the way you should use the rankings differ between the two lists. This guide explains what is in each, how the tiering math works, and why the AmLaw rankings stop being useful right around the spot where most legal-tech buyers want to keep selling.</p>
+
+                    <h2>What ALM publishes, exactly</h2>
+                    <p>ALM, the publisher of The American Lawyer, releases the AmLaw 100 each spring and the AmLaw 200 a few weeks later. The headline number on both rankings is gross revenue for the prior calendar year. The supporting fields include revenue per lawyer, profits per equity partner, total head count, equity and non-equity partner counts, and the percentage of revenue from the firm's largest office. Some years ALM publishes net income figures and growth rates against the prior year. Most years it does not publish geographic revenue breakdowns or practice-group financials.</p>
+
+                    <p>The data comes from firm self-reporting, supplemented by ALM's reporting team. Every firm in the rankings has the chance to challenge ALM's numbers before publication. The result is directionally accurate but rarely surprising. A firm reporting $1.2B in 2024 revenue is not off by half a billion. It may be off by $30M because of how partner compensation gets categorized as expense versus distribution.</p>
+
+                    <h2>How the tiering works</h2>
+                    <p>The AmLaw 100 in the most recent release starts around $700M in gross revenue and runs up to about $7B at the top. The AmLaw 200 cut-off sits around $230M in revenue. The drop-off is steep at both ends. The top 20 firms account for roughly half of the total AmLaw 200 revenue. Firms 150 through 200 cluster within a narrow band where moving one rank up or down often comes down to a single large matter or a Q4 lateral hire.</p>
+
+                    <p>Profits per equity partner tells a different story. The top firms post PPP above $7M. Firms in the 50 to 100 range typically post $1.5M to $3M. By the time you reach the bottom of the AmLaw 200, PPP can be under $700K, which is closer to a strong regional firm than to a national platform. PPP matters because it predicts which firms will adopt premium legal-tech products. High-PPP firms can absorb $200K annual subscriptions on a partner-level pitch. Lower-PPP firms cannot.</p>
+
+                    <h2>What is inside an AmLaw record</h2>
+                    <p>If you license the ALM data feed or pull the rankings off the AmLaw website, you get firm-level information. You do not get attorney-level contact information. ALM is not a contact database. A typical record contains the firm name, headquarters city, gross revenue, RPL, PPP, equity partner count, non-equity partner count, total lawyer count, and a one-line description of the firm's primary practice. Some packages add five-year historical financials. None add direct-dial phone numbers, working emails, or partner-level rosters with role labels.</p>
+
+                    <p>That gap is the source of most legal-tech data confusion. Teams license ALM thinking they bought a prospecting database, then realize they have a 200-row spreadsheet without a single attorney email on it. To run outbound, you have to layer a contact source on top. We do that layering at Lexica through our <a href="/services/firm-segmentation/">firm segmentation service</a>: pull ALM for firm-level prioritization, then build verified partner contacts for the firms that match your tier.</p>
+
+                    <h2>What is missing for mid-market firms</h2>
+                    <p>The AmLaw 200 stops, by definition, at firm 200. The U.S. legal market does not stop there. The National Law Journal 500 covers a wider range, but the data quality declines past rank 350. The real gap is firms 200 to 600, the mid-market layer with $50M to $230M in revenue. These are the firms that look national from the outside, run 100 to 400 lawyers, and frequently buy legal tech, but they sit in a coverage hole where ALM does not include them and ZoomInfo barely touches them.</p>
+
+                    <p>If your ICP is the mid-market, do not start with AmLaw data. Start with state bar data filtered by firm size, cross-referenced with firm websites for office locations and practice groups. We build that segmentation from public records for clients every week. See an example at our <a href="/firm-size/mid-size-firms/">mid-size firm data page</a>.</p>
+
+                    <h2>How buyers should use each ranking</h2>
+                    <p>The AmLaw 100 is a TAM definition tool. If your product targets the wealthiest 100 firms in the country, you do not need a sophisticated prioritization model. You need the list, the names of the relevant partners at each firm, and a strategy for getting in. Coverage is high. Public information is dense. Most of these firms have communications teams that announce partner additions and practice launches.</p>
+
+                    <p>The AmLaw 200 is a tiering tool. Once you go beyond the top 100, you need to slice the next 100 firms by practice mix, geography, and partner count. A firm with $400M in revenue and 200 lawyers in three offices is a different sales motion than a firm with $400M in revenue and 800 lawyers across 18 offices. Both rank similarly. Their buying behavior differs.</p>
+
+                    <p>The NLJ 500 extends visibility but loses precision. Use it for context, not for prospecting filters. Below that, you are in mid-market territory where you need to build your own segmentation from primary sources.</p>
+
+                    <h2>The lateral hiring signal</h2>
+                    <p>One AmLaw data point worth pulling separately is lateral partner movement. ALM tracks high-profile lateral hires through American Lawyer and Law.com coverage, but the firmwide pattern is reported only in aggregate annual summaries. If you can pull lateral movement at the partner level (often via Above the Law's lateral move tracking, or by monitoring firm press releases) you get a sharper signal than revenue alone. Firms losing partners in a practice group are vulnerable, which is when they buy. Firms gaining partners are scaling that practice, which is also when they buy. Steady firms with no movement are the hardest to penetrate.</p>
+
+                    <h2>Pricing for AmLaw data</h2>
+                    <p>ALM sells access to the AmLaw datasets through Law.com Compass and through direct licensing. Pricing is opaque and varies with seat count, but expect to spend in the low five figures annually for a small team. Standalone reports are cheaper. If you are running a single TAM exercise rather than maintaining a continuous prospecting motion, the report is enough. If you are running an account-based program targeting AmLaw firms, the dataset access pays for itself within a quarter.</p>
+
+                    <p>For most teams selling into BigLaw, the right stack is ALM for firm tiering, Lexica or a similar source for partner contacts, and LinkedIn Sales Navigator for last-mile signal. Buying only one of the three will leave you working off incomplete information.</p>
+
+                    <h2>Where AmLaw data falls short on segmentation</h2>
+                    <p>The AmLaw rankings flatten enormous differences inside each firm. Two firms ranked back to back in the AmLaw 50 can have completely different practice mixes. One might pull 60% of its revenue from M&A and capital markets. The other might be 70% litigation and labor. If you are selling a contract management tool, the first firm is a strong fit and the second is a long shot. AmLaw alone will not tell you that. You need practice-group data, which usually comes from firm websites, court filings, or industry surveys like the Chambers rankings.</p>
+
+                    <p>Geography is another flatten point. A firm with 800 lawyers across 18 offices serves a different market than a firm with 800 lawyers across three offices. The first is a logistics buyer for collaboration tools. The second is a culture buyer that may resist any new technology that creates friction in the home office. Cross-reference AmLaw revenue with office count, lateral hiring patterns, and recent practice launches to get a real segmentation.</p>
+
+                    <h2>Why the gap below AmLaw 200 matters more every year</h2>
+                    <p>The legal market is consolidating at the top and proliferating at the bottom. The largest firms are growing faster than overall industry revenue, but the number of firms in the 50-to-300 lawyer range has been climbing for a decade as partners spin out of larger firms or as regional firms merge into multi-state platforms. That growth is invisible to AmLaw because most of these firms sit just below the cut-off. Buyers who only target the AmLaw 200 are missing the segment of the market that is growing in count, which is also the segment most willing to switch vendors.</p>
+
+                    <p>If your product can sell into firms with $80M to $230M in revenue, the conversion math often beats AmLaw 100 selling because the buying cycles are shorter and the incumbent contracts are smaller. The data to find these firms exists. It is just not in the AmLaw feed. <a href="/contact/">Tell us where you are starting</a> and we will scope what you need to fill in.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section faq-section">
+            <div class="container">
+                <h2 class="section__title">Frequently Asked Questions</h2>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What is the difference between AmLaw 100 and AmLaw 200?</summary>
+                    <div class="faq-item__answer"><p>The AmLaw 100 ranks the top 100 U.S. firms by gross revenue. The AmLaw 200 extends the ranking to 200 firms. Both are published annually by ALM. The 100 is more financially homogeneous; the 200 includes a long tail of smaller firms with very different economics.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What's the AmLaw 100 cut-off?</summary>
+                    <div class="faq-item__answer"><p>In the most recent release, the AmLaw 100 starts at roughly $700M in gross revenue. The cut-off shifts each year as firms grow. The AmLaw 200 cut-off is around $230M.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What is PPP and why does it matter?</summary>
+                    <div class="faq-item__answer"><p>PPP is profits per equity partner, the average distribution to a firm's equity partners after expenses. It signals how much discretionary spending power the partnership has. High-PPP firms ($3M+) buy premium legal tech and outside services more readily than lower-PPP firms.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">Does AmLaw data include attorney contact information?</summary>
+                    <div class="faq-item__answer"><p>No. AmLaw data is firm-level: revenue, partner count, head count, and practice descriptions. You need a separate contact source to reach individual partners or associates.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">What about firms ranked 200 to 600?</summary>
+                    <div class="faq-item__answer"><p>These are mid-market firms. They are not covered by ALM and are poorly covered by horizontal platforms like ZoomInfo. The best source is state bar data filtered by firm size, cross-referenced with firm websites. Lexica builds this segment for clients on demand.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item__question">How often is AmLaw data updated?</summary>
+                    <div class="faq-item__answer"><p>Once per year, in the spring. The AmLaw 100 is published first, followed by the AmLaw 200 a few weeks later. Lateral hires, practice launches, and office openings are tracked separately through Law.com and Above the Law.</p></div>
+                </details>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+        <div class="related-links">
+            <h3 class="related-links__title">Related Pages</h3>
+            <ul class="related-links__list">
+                <li><a href="/firm-size/am-law-200/">AmLaw 200 Firm Data</a></li>
+                <li><a href="/firm-size/large-firms/">Large Firm Data</a></li>
+                <li><a href="/firm-size/mid-size-firms/">Mid-Size Firm Data</a></li>
+                <li><a href="/services/firm-segmentation/">Firm Segmentation Service</a></li>
+                <li><a href="/practice-areas/corporate-ma/">Corporate / M&A Practice Data</a></li>
+            </ul>
+        </div>
+            </div>
+        </section>
+
+
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-section__header">
+                    <h2 class="cta-section__title">Need contact data on AmLaw 200 firms?</h2>
+                    <p class="cta-section__text">We map ALM firm financials to verified partner-level contacts. Tell us the segment and we will scope a list.</p>
+                </div>
+
+                <a href="/contact/" class="btn btn--white btn--lg">Get Firm Data</a>
+                <p class="cta-section__proof">Bar verified. 3-5 day delivery. No annual contracts.</p>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/assets/icons/icon-no-bg-white.svg" alt="" class="footer__logo-icon" width="32" height="40" loading="lazy">
+                        <span class="footer__logo-text">Lexica</span>
+                    </a>
+                    <p class="footer__tagline">Law Firm Contact Intelligence</p>
+                </div>
+
+            <div class="footer__column">
+                <h4 class="footer__heading">Practice Areas</h4>
+                <ul class="footer__links">
+                    <li><a href="/practice-areas/">All Practice Areas</a></li>
+<li><a href="/practice-areas/corporate-ma/">Corporate / M&A</a></li>
+<li><a href="/practice-areas/litigation/">Litigation</a></li>
+<li><a href="/practice-areas/intellectual-property/">Intellectual Property</a></li>
+<li><a href="/practice-areas/real-estate/">Real Estate</a></li>
+<li><a href="/practice-areas/employment-labor/">Employment / Labor</a></li>
+<li><a href="/practice-areas/personal-injury/">Personal Injury</a></li>
+<li><a href="/practice-areas/criminal-defense/">Criminal Defense</a></li>
+<li><a href="/practice-areas/family-law/">Family Law</a></li>
+<li><a href="/practice-areas/bankruptcy/">Bankruptcy</a></li>
+<li><a href="/practice-areas/immigration/">Immigration</a></li>
+<li><a href="/practice-areas/tax-law/">Tax Law</a></li>
+<li><a href="/practice-areas/environmental/">Environmental</a></li>
+<li><a href="/practice-areas/healthcare-law/">Healthcare Law</a></li>
+<li><a href="/practice-areas/insurance-defense/">Insurance Defense</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="/services/attorney-contact-data/">Attorney Contacts</a></li>
+<li><a href="/services/bar-verification/">Bar Verification</a></li>
+<li><a href="/services/custom-list-building/">Custom Lists</a></li>
+<li><a href="/services/firm-segmentation/">Firm Segmentation</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">For Your Team</h4>
+                <ul class="footer__links">
+                    <li><a href="/for/legal-tech/">Legal Tech</a></li>
+<li><a href="/for/legal-recruiters/">Legal Recruiters</a></li>
+<li><a href="/for/court-reporting/">Court Reporting</a></li>
+<li><a href="/for/expert-witness/">Expert Witness</a></li>
+<li><a href="/for/legal-marketing/">Legal Marketing</a></li>
+<li><a href="/for/e-discovery/">E-Discovery</a></li>
+<li><a href="/for/insurance/">Insurance</a></li>
+<li><a href="/for/legal-staffing/">Legal Staffing</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Resources</h4>
+                <ul class="footer__links">
+                    <li><a href="/resources/">Guides & Articles</a></li>
+<li><a href="/compare/">Comparisons</a></li>
+<li><a href="/alternatives/">Alternatives</a></li>
+<li><a href="/for/">By Industry</a></li>
+<li><a href="/firm-size/">By Firm Size</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Compare</h4>
+                <ul class="footer__links">
+                    <li><a href="/compare/vs-zoominfo/">Lexica vs ZoomInfo</a></li>
+<li><a href="/compare/vs-apollo/">Lexica vs Apollo</a></li>
+<li><a href="/compare/vs-martindale/">Lexica vs Martindale</a></li>
+<li><a href="/compare/vs-findlaw/">Lexica vs FindLaw</a></li>
+<li><a href="/alternatives/zoominfo-alternative/">ZoomInfo Alternative</a></li>
+<li><a href="/alternatives/martindale-alternative/">Martindale Alternative</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__heading">Company</h4>
+                <ul class="footer__links">
+                    <li><a href="/about/">About Lexica</a></li>
+<li><a href="/pricing/">Pricing</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="https://getprovyx.com" target="_blank" rel="noopener noreferrer">Provyx</a></li>
+<li><a href="https://veruminc.com" target="_blank" rel="noopener noreferrer">Verum</a></li>
+<li><a href="https://getvettica.com" target="_blank" rel="noopener noreferrer">Vettica</a></li>
+<li><a href="https://getfiducia.com" target="_blank" rel="noopener noreferrer">Fiducia</a></li>
+<li><a href="https://gettradebridge.com" target="_blank" rel="noopener noreferrer">TradeBridge</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Lexica. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="consent-banner" class="consent-banner" style="display:none">
+        <p>We use cookies to analyze site traffic and improve your experience. <a href="/privacy/">Privacy Policy</a></p>
+        <div class="consent-banner__actions">
+            <button class="consent-banner__btn consent-banner__btn--accept" onclick="lexicaConsent('granted')">Accept</button>
+            <button class="consent-banner__btn consent-banner__btn--deny" onclick="lexicaConsent('denied')">Deny</button>
+        </div>
+    </div>
+    <script>
+    function lexicaConsent(v){
+      localStorage.setItem('lexica-consent',v);
+      if(v==='granted'){
+        gtag('consent','update',{'ad_storage':'granted','analytics_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
+      }
+      document.getElementById('consent-banner').style.display='none';
+    }
+    if(!localStorage.getItem('lexica-consent')){
+      document.getElementById('consent-banner').style.display='';
+    }
+    </script>
+
+    <!-- Header scroll shadow -->
+    <script>
+    (function(){
+      var h=document.querySelector('.header');
+      if(!h)return;
+      window.addEventListener('scroll',function(){
+        if(window.scrollY>10)h.classList.add('header--scrolled');
+        else h.classList.remove('header--scrolled');
+      },{passive:true});
+    })();
+    </script>
+</body>
+</html>
